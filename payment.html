@@ -1,0 +1,316 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali E-Passport</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center><h1>Nepali E-Passport</h1></center>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Acts and Rules</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">News and Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Apply for e-Passport</h2>
+            <form action="#" method="POST">
+                <h3>DEMOGRAPHIC INFORMATION</h3> 
+                <label for="lastName">Last Name / Surname*:</label>
+                <input type="text" id="lastName" name="lastName" required><br><br>
+        
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" name="firstName"><br><br>
+        
+                <label for="gender">Gender*:</label>
+                <select id="gender" name="gender" required>
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+        
+                <label for="dobAD">Date of Birth (A.D.) - YYYY-MM-DD*:</label>
+                <input type="text" id="dobAD" name="dobAD" pattern="\d{4}-\d{2}-\d{2}" required><br><br>
+        
+                <label for="exactDob">Is this exact Date of Birth?*:</label>
+                <input type="checkbox" id="exactDob" name="exactDob"><br><br>
+        
+                <label for="dobBS">Date of Birth B.S (Nepali) - YYYY-MM-DD*:</label>
+                <input type="text" id="dobBS" name="dobBS" pattern="\d{4}-\d{2}-\d{2}" required><br><br>
+        
+                <label for="placeOfBirth">Place of Birth (District/Country if born abroad)*:</label>
+                <input type="text" id="placeOfBirth" name="placeOfBirth" required><br><br>
+        
+                <label for="birthCountry">Birth Country:</label>
+                <input type="text" id="birthCountry" name="birthCountry"><br><br>
+        
+                <label for="nationality">Nationality*:</label>
+                <input type="text" id="nationality" name="nationality" required><br><br>
+        
+                <label for="fatherLastName">Father's Last Name / Surname*:</label>
+                <input type="text" id="fatherLastName" name="fatherLastName" required><br><br>
+        
+                <label for="fatherFirstName">Father's First Name:</label>
+                <input type="text" id="fatherFirstName" name="fatherFirstName"><br><br>
+        
+                <label for="motherLastName">Mother's Last Name / Surname*:</label>
+                <input type="text" id="motherLastName" name="motherLastName" required><br><br>
+        
+                <label for="motherFirstName">Mother's First Name:</label>
+                <input type="text" id="motherFirstName" name="motherFirstName"><br><br>
+        
+            <!-- Second Division: National Identity Number (NIN) -->
+            <h3>National Identity Number (NIN - Enter Only Digits)</h3>
+        
+                <label for="citizenshipNumber">Citizenship Number or Permit Number*:</label>
+                <input type="text" id="citizenshipNumber" name="citizenshipNumber" pattern="\d+" required><br><br>
+        
+                <label for="citizenshipIssueBS">Citizenship Date of Issue B.S (Nepali date)*:</label>
+                <input type="text" id="citizenshipIssueBS" name="citizenshipIssueBS" pattern="\d{4}-\d{2}-\d{2}" required><br><br>
+        
+                <label for="citizenshipPlaceDistrict">Citizenship Place of Issue (District)*:</label>
+                <input type="text" id="citizenshipPlaceDistrict" name="citizenshipPlaceDistrict" required><br><br>
+        
+                <label for="citizenshipPlaceAbroad">Citizenship Place of Issue (Abroad):</label>
+                <input type="text" id="citizenshipPlaceAbroad" name="citizenshipPlaceAbroad"><br><br>
+        
+            <!-- Third Division: APPLICANT'S CONTACT DETAILS- आवेदकको सम्पर्क विवरण -->
+            <h3>APPLICANT'S CONTACT DETAILS- आवेदकको सम्पर्क विवरण</h3>
+        
+                <label for="mobileNumber">Mobile number*:</label>
+                <input type="tel" id="mobileNumber" name="mobileNumber" required><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+        
+                <label for="mainAddressHouseNumber">Main Address House Number:</label>
+                <input type="text" id="mainAddressHouseNumber" name="mainAddressHouseNumber"><br><br>
+        
+                <label for="mainAddressStreet">Main Address Street/Village*:</label>
+                <input type="text" id="mainAddressStreet" name="mainAddressStreet" required><br><br>
+        
+                <label for="mainAddressWard">Main Address Ward*:</label>
+                <input type="text" id="mainAddressWard" name="mainAddressWard" required><br><br>
+        
+                <label for="mainAddressCountry">Main Address Country:</label>
+                <input type="text" id="mainAddressCountry" name="mainAddressCountry"><br><br>
+        
+                <label for="mainAddressProvince">Main Address Province*:</label>
+                <input type="text" id="mainAddressProvince" name="mainAddressProvince" required><br><br>
+        
+                <label for="mainAddressDistrict">Main Address District*:</label>
+                <input type="text" id="mainAddressDistrict" name="mainAddressDistrict" required><br><br>
+        
+                <label for="mainAddressMunicipality">Main Address Municipality*:</label>
+                <input type="text" id="mainAddressMunicipality" name="mainAddressMunicipality" required><br><br>
+        
+            <!-- Fourth Division: CONTACT DETAILS IN CASE OF EMERGENCY-जरूरी परेमा सम्पर्क गर्ने विवरण -->
+            <h3>CONTACT DETAILS IN CASE OF EMERGENCY-जरूरी परेमा सम्पर्क गर्ने विवरण</h3>
+        
+                <label for="emergencyLastName">Last Name / Surname*:</label>
+                <input type="text" id="emergencyLastName" name="emergencyLastName" required><br><br>
+        
+                <label for="emergencyFirstName">First Name:</label>
+                <input type="text" id="emergencyFirstName" name="emergencyFirstName"><br><br>
+        
+                <label for="emergencyHouseNumber">House Number:</label>
+                <input type="text" id="emergencyHouseNumber" name="emergencyHouseNumber"><br><br>
+        
+                <label for="emergencyStreet">Street/Village*:</label>
+                <input type="text" id="emergencyStreet" name="emergencyStreet" required><br><br>
+        
+                <label for="emergencyWard">Ward Number*:</label>
+                <input type="text" id="emergencyWard" name="emergencyWard" required><br><br>
+        
+                <label for="emergencyCountry">Country:</label>
+                <input type="text" id="emergencyCountry" name="emergencyCountry"><br><br>
+        
+                <label for="emergencyProvince">Province*:</label>
+                <input type="text" id="emergencyProvince" name="emergencyProvince" required><br><br>
+        
+                <label for="emergencyDistrict">District*:</label>
+                <input type="text" id="emergencyDistrict" name="emergencyDistrict" required><br><br>
+        
+                <label for="emergencyMunicipality">Municipality*:</label>
+                <input type="text" id="emergencyMunicipality" name="emergencyMunicipality" required><br><br>
+        
+                <label for="emergencyPhone">Phone:</label>
+                <input type="tel" id="emergencyPhone" name="emergencyPhone"><br><br>
+        
+                <label for="emergencyEmail">Email:</label>
+                <input type="email" id="emergencyEmail" name="emergencyEmail"><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nepali e-Passport Office</p>
+    </footer>
+</body>
+</html>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali E-Passport</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <center><h1>Nepali E-Passport</h1></center>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Acts and Rules</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">News and Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Apply for e-Passport</h2>
+            <form action="#" method="POST">
+                <label for="photo">Photo:</label>
+                <input type="file" id="photo" name="photo" accept="image/*"><br><br>
+        
+                <label for="surname">Surname:</label>
+                <input type="text" id="surname" name="surname"><br><br>
+        
+                <label for="name">Name:</label>
+                <input type="text" id="name" name="name"><br><br>
+        
+                <label for="placeOfBirth">Place of Birth:</label>
+                <input type="text" id="placeOfBirth" name="placeOfBirth"><br><br>
+        
+                <label for="dateOfBirth">Date of Birth:</label>
+                <input type="date" id="dateOfBirth" name="dateOfBirth"><br><br>
+        
+                <label for="gender">Gender:</label>
+                <select id="gender" name="gender">
+                    <option value="male">Male</option>
+                    <option value="female">Female</option>
+                    <option value="other">Other</option>
+                </select><br><br>
+        
+                <label for="citizenshipNo">Citizenship No:</label>
+                <input type="text" id="citizenshipNo" name="citizenshipNo"><br><br>
+        
+                <label for="dateOfIssue">Date of Issue:</label>
+                <input type="date" id="dateOfIssue" name="dateOfIssue"><br><br>
+        
+                <label for="placeOfIssue">Place of Issue:</label>
+                <input type="text" id="placeOfIssue" name="placeOfIssue"><br><br>
+        
+                <label for="address">Address:</label>
+                <textarea id="address" name="address"></textarea><br><br>
+        
+                <label for="district">District:</label>
+                <input type="text" id="district" name="district"><br><br>
+        
+                <label for="municipality">Municipality:</label>
+                <input type="text" id="municipality" name="municipality"><br><br>
+        
+                <label for="wardNo">Ward No:</label>
+                <input type="text" id="wardNo" name="wardNo"><br><br>
+        
+                <label for="email">Email:</label>
+                <input type="email" id="email" name="email"><br><br>
+        
+                <label for="phoneNo">Phone No:</label>
+                <input type="tel" id="phoneNo" name="phoneNo"><br><br>
+        
+                <label for="fullNameK">Fullname (K):</label>
+                <input type="text" id="fullNameK" name="fullNameK"><br><br>
+        
+                <label for="addressK">Address (K):</label>
+                <textarea id="addressK" name="addressK"></textarea><br><br>
+        
+                <label for="districtK">District (K):</label>
+                <input type="text" id="districtK" name="districtK"><br><br>
+        
+                <label for="municipalityK">Municipality (K):</label>
+                <input type="text" id="municipalityK" name="municipalityK"><br><br>
+        
+                <label for="wardNoK">Ward No (K):</label>
+                <input type="text" id="wardNoK" name="wardNoK"><br><br>
+        
+                <label for="emailK">Email (K):</label>
+                <input type="email" id="emailK" name="emailK"><br><br>
+        
+                <label for="phoneNoK">Phone No (K):</label>
+                <input type="tel" id="phoneNoK" name="phoneNoK"><br><br>
+        
+                <label for="relationship">Relationship:</label>
+                <input type="text" id="relationship" name="relationship"><br><br>
+        
+                <label for="signature">Signature:</label>
+                <input type="file" id="signature" name="signature"><br><br>
+        
+                <label for="date">Date:</label>
+                <input type="date" id="date" name="date"><br><br>
+        
+                <input type="submit" value="Submit">
+            </form>
+        </div>
+    </main>
+    <footer>
+        <p>&copy; 2024 Nepali e-Passport Office</p>
+    </footer>
+</body>
+</html>

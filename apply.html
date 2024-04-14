@@ -1,0 +1,120 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nepali E-Passport</title>
+    <link rel="stylesheet" href="styles.css">
+    <link rel="stylesheet" href="next1.html">
+</head>
+<body>
+    <center><h1>Nepali E-Passport</h1></center>
+    <header>
+        <nav>
+            <ul>
+                <li><a href="index.html">Home</a></li>
+                <li><a href="#">About Us</a></li>
+                <li><a href="#">Acts and Rules</a></li>
+                <li><a href="#">Download</a></li>
+                <li><a href="#">News and Events</a></li>
+            </ul>
+        </nav>
+    </header>
+    <main>
+        <div class="container">
+            <h2>Apply for e-Passport</h2>
+        
+            <form action="connect.php" method="post">
+                <h3>DEMOGRAPHIC INFORMATION</h3> 
+                <label for="lastName">Last Name / Surname*:</label>
+                <input type="text" id="lastName" name="lastName" class="form-control" required><br><br>
+        
+                <label for="firstName">First Name:</label>
+                <input type="text" id="firstName" class="form-control" name="firstName"><br><br>
+                
+                <label for="gender">Gender*:</label>
+                <label for="male" class="radio-inline"
+                ><input
+                  type="radio"
+                  name="gender"
+                  value="m"
+                  id="male"
+                />Male</label
+              >
+              <label for="female" class="radio-inline"
+                ><input
+                  type="radio"
+                  name="gender"
+                  value="f"
+                  id="female"
+                />Female</label
+              >
+              <label for="others" class="radio-inline"
+                ><input
+                  type="radio"
+                  name="gender"
+                  value="o"
+                  id="others"
+                />Others</label
+              ><br>
+        
+                <label for="dobAD">Date of Birth (A.D.) - YYYY-MM-DD*:</label>
+                <input type="text" id="dobAD" name="dobAD" pattern="\d{4}-\d{2}-\d{2}" required><br><br>
+        
+                <label for="dobBS">Date of Birth B.S (Nepali) - YYYY-MM-DD*:</label>
+                <input type="text" id="dobBS" name="dobBS" pattern="\d{4}-\d{2}-\d{2}" required><br><br>
+        
+                <label for="placeOfBirth">Place of Birth (District/Country if born abroad)*:</label>
+                <input type="text" id="placeOfBirth" name="placeOfBirth" required><br><br>
+        
+                <label for="birthCountry">Birth Country:</label>
+                <input type="text" id="birthCountry" name="birthCountry"><br><br>
+        
+                <label for="nationality">Nationality*:</label>
+                <input type="text" id="nationality" name="nationality" required><br><br>
+        
+                <label for="fatherLastName">Father's Last Name / Surname*:</label>
+                <input type="text" id="fatherLastName" name="fatherLastName" required><br><br>
+        
+                <label for="fatherFirstName">Father's First Name:</label>
+                <input type="text" id="fatherFirstName" name="fatherFirstName"><br><br>
+        
+                <label for="motherLastName">Mother's Last Name / Surname*:</label>
+                <input type="text" id="motherLastName" name="motherLastName" required><br><br>
+        
+                <label for="motherFirstName">Mother's First Name:</label>
+                <input type="text" id="motherFirstName" name="motherFirstName"><br><br>
+                <input type="submit" name="sb"/>
+            </form>
+            <li><a href="next1.html">Next Page</a></li>
+        </div>
+    </main>
+    
+    <!-- <?php
+	$con=mysqli_connect('localhost','root','','royal');
+if(isset($_POST['sb']))
+{
+  $firstName = $_POST['firstName'];
+	$lastName = $_POST['lastName'];
+	$gender = $_POST['gender'];
+	$dobAD = $_POST['dobAD'];
+	$dobBS = $_POST['dobBS'];
+	$placeOfBirth = $_POST['placeOfBirth'];
+	$birthCountry = $_POST['birthCountry'];
+	$nationality = $_POST['nationality'];
+	$fatherLastName = $_POST['fatherLastName'];
+	$fatherFirstName = $_POST['fatherFirstName'];
+	$motherLastName = $_POST['motherLastName'];
+	$motherFirstName = $_POST['motherFirstName'];
+	$motherFirstName = $_POST['motherFirstName'];
+  $query="INSERT INTO registration1(firstName, lastName, gender, dobAD, dobBS, placeOfBirth, birthCountry, nationality, fatherLastName, fatherFirstName, motherLastName, motherFirstName)values('$firstName', '$lastName','$gender', '$dobAD', '$dobBS', '$placeOfBirth', '$birthCountry', '$nationality', '$fatherLastName', '$fatherFirstName', '$motherLastName', '$motherFirstName')";
+  $run=mysqli_query($con,$query);
+   
+}
+
+    ?> -->
+    <footer>
+        <p>&copy; 2024 Nepali e-Passport Office</p>
+    </footer>
+</body>
+</html>
